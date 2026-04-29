@@ -15,9 +15,12 @@ if (isset($_POST['login_btn'])) {
     $login = $_POST['user_login'];
     $pass = $_POST['user_pass'];
 
-    if ($login === 'admin' && $pass === '12345') {
+    if ($login === 'admin' && $pass === '1234') {
         $_SESSION['auth'] = true;
         $_SESSION['login'] = $login;
+        $_SESSION['pass'] = $pass;
+        header("Location: second.php");
+        exit;
     } else {
         $error = "Неверный пароль!";
     }
@@ -25,7 +28,7 @@ if (isset($_POST['login_btn'])) {
 
 if (isset($_GET['exit'])) {
     session_destroy();
-    header("Location: " . $_SERVER['PHP_SELF']);
+    header("Location: index.php");
     exit;
 }
 ?>
@@ -55,11 +58,6 @@ if (isset($_GET['exit'])) {
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .admin-block {
-            background: #eef9ff;
-            border-left: 5px solid #3498db;
-            padding: 15px;
-        }
         input {
             display: block;
             width: 100%;
@@ -83,14 +81,11 @@ if (isset($_GET['exit'])) {
             color: #3498db;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
-    <h1>Лабораторная работа - Тупик П.Н.</h1>
+    <h1>Лабораторная работа</h1>
 
     <div class="section">
         <h2>Посещения и Cookies</h2>
@@ -108,15 +103,11 @@ if (isset($_GET['exit'])) {
                     <p class="error"><?php echo $error; ?></p>
                 <?php endif; ?>
                 <input type="text" name="user_login" placeholder="Логин (admin)" required>
-                <input type="password" name="user_pass" placeholder="Пароль (12345)" required>
+                <input type="password" name="user_pass" placeholder="Пароль (1234)" required>
                 <button type="submit" name="login_btn">Войти в кабинет</button>
             </form>
         <?php else: ?>
-            <div class="admin-block">
-                <h3>Добро пожаловать, <?php echo $_SESSION['login']; ?>!</h3>
-                <p>Доступ к закрытой области разрешен.</p>
-                <p><a href="?exit=1" style="color: #e74c3c;">Выйти из системы</a></p>
-            </div>
+            <p>Вы уже авторизованы. <a href="second.php">Перейти в кабинет</a> или <a href="?exit=1">Выйти</a></p>
         <?php endif; ?>
     </div>
 
