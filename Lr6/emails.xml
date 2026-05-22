@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <email>test1@example.com</email>
+    </user>
+    <user>
+        <email>test2@example.com</email>
+    </user>
+    <user>
+        <email>test3@example.com</email>
+    </user>
+    <user>
+        <email>test3@example.com</email>
+    </user>
+    <user>
+        <email>test4@example.com</email>
+    </user>
+    <user>
+        <email>test5@example.com</email>
+    </user>
+    <user>
+        <email>test6@example.com</email>
+    </user>
+    <user>
+        <email>test7@example.com</email>
+    </user>
+    <user>
+        <email>test8@example.com</email>
+    </user>
+    <user>
+        <email>test9@example.com</email>
+    </user>
+    <user>
+        <email>test10@example.com</email>
+    </user>
+    <user>
+        <email>test11@example.com</email>
+    </user>
+    <user>
+        <email>test12@example.com</email>
+    </user>
+    <user>
+        <email>test13@example.com</email>
+    </user>
+</users>

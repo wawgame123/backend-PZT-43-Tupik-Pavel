@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Fest</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="promo-header">
+        <div class="tapes-wrapper">
+            <div class="tape tape-1">Черная пятница • Черная пятница</div>
+            <div class="tape tape-2">Черная пятница • Черная пятница</div>
+        </div>
+        <div class="promo-text">-30% на все курсы</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo">
+                    <div class="logo-row">MON<div class="e-strips"><div class="strip"></div><div class="strip"></div><div class="strip"></div></div>Y</div>
+                    <div class="logo-row bottom">F<div class="e-strips"><div class="strip"></div><div class="strip"></div><div class="strip"></div></div>ST</div>
+                </div>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Курсы</a></li>
+                    <li><a href="#">Эксперты</a></li>
+                    <li><a href="#">Публикации</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-cabinet">Личный кабинет</button>
+                <button class="burger-menu" onclick="toggleMenu()">
+                    <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <div class="hero-wrapper">
+            <div class="slider-arrow prev"><</div>
+            <div class="slider-arrow next">></div>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Учим зарабатывать на криптовалюте с нуля</h1>
+                    <p>Онлайн-школа и профессиональное сообщество</p>
+                    <button class="btn-course">Выбрать курс</button>
+                </div>
+                <div class="hero-images">
+                    <img src="/image/phone_dark.png" alt="Phone" class="phone phone-back">
+                    <img src="/image/phone_light.png" alt="Phone" class="phone phone-front">
+                </div>
+            </section>
+            <div class="slider-dots">
+                <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+        </div>
+
+        <section class="stats">
+            <div class="stat-item"><h2>4000+</h2><p>Учеников уже зарабатывают на криптовалюте</p></div>
+            <div class="stat-item"><h2>700+</h2><p>Трейдеров в закрытом комьюнити</p></div>
+            <div class="stat-item"><h2>6 лет</h2><p>Успешно обучаем людей зарабатывать</p></div>
+            <div class="stat-item"><h2>$17+ млн</h2><p>Под консультационным управлением</p></div>
+        </section>
+
+        <section class="learn-section">
+            <h2>Как проходит обучение</h2>
+            <div class="learn-banner">
+                <img src="/image/learn.png" alt="Learn process">
+                <div class="play-button"></div>
+            </div>
+            <div class="learn-steps">
+                <div class="step-item">
+                    <div class="step-header"><span class="step-number">1</span></div>
+                    <h3>Видеоуроки и онлайн-встречи</h3>
+                    <p>Доступ к ним остается навсегда.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-header"><span class="step-number">2</span></div>
+                    <h3>Домашние задания</h3>
+                    <p>С обратной связью от эксперта.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-header"><span class="step-number">3</span></div>
+                    <h3>Кураторы курсов</h3>
+                    <p>Всегда на связи, чтобы ответить на ваши вопросы.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-header"><span class="step-number">4</span></div>
+                    <h3>Чат с участниками курса</h3>
+                    <p>Новости и прогнозы, полезные материалы и просто общение.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="reviews-header">
+                <h2>Ученики про нас</h2>
+                <a href="#" class="add-review">Добавить отзыв</a>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/albert.png" alt="Альберт" class="avatar">
+                        <div>
+                            <div class="name">Альберт</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="/image/videorequest.png" alt="Video review">
+                        <div class="play-small"></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/anton.png" alt="Антон" class="avatar">
+                        <div>
+                            <div class="name">Антон</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Дмитрий, спасибо Вам за уроки))) Вы обьясняете доступно и понятно каждую тему. Во многом, благодаря Вам, хочется и дальше развиваться в данном направлении.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/kirill.png" alt="Кирилл" class="avatar">
+                        <div>
+                            <div class="name">Кирилл</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Дмитрий, спасибо Вам за уроки))) Вы обьясняете доступно и понятно каждую тему.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/Nastya.png" alt="Анастасия" class="avatar">
+                        <div>
+                            <div class="name">Анастасия</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="/image/videorequest.png" alt="Video review">
+                        <div class="play-small"></div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/nikita.png" alt="Никита" class="avatar">
+                        <div>
+                            <div class="name">Никита</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <p class="review-text">Это лучшая школа по обучению криптовалюте, которую я знаю. Пробовал другие, не впечатлило.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="/image/janna.png" alt="Жанна" class="avatar">
+                        <div>
+                            <div class="name">Жанна</div>
+                            <div class="date">12 марта 2021</div>
+                        </div>
+                    </div>
+                    <div class="video-thumbnail">
+                        <img src="/image/videorequest.png" alt="Video review">
+                        <div class="play-small"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-reviews">
+                <button class="btn-more">Показать еще</button>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-banner">
+                <div class="contact-text">
+                    <h2>Есть вопросы? Сейчас ответим</h2>
+                    <p>Оставьте свои контакты</p>
+                </div>
+                <form class="contact-form" id="ajax-form">
+                    <div class="input-group">
+                        <input type="text" name="username" placeholder="Имя" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="tel" name="phone" placeholder="8 (996) 238-56-58" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <p class="policy">
+                            Нажимая <span class="quotes">«</span>Отправить<span class="quotes">»</span>, 
+                            соглашаюсь с <a href="#">правилами</a>
+                        </p>
+                        <button type="submit" class="btn-send">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="scroll-wrapper">
+                <button class="btn-scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"></button>
+            </div>
+
+            <div class="footer-top-grid">
+                <div class="footer-col brand-col">
+                    <div class="logo white">
+                        <div class="logo-row">MON<div class="e-strips"><div class="strip"></div><div class="strip"></div><div class="strip"></div></div>Y</div>
+                        <div class="logo-row bottom">F<div class="e-strips"><div class="strip"></div><div class="strip"></div><div class="strip"></div></div>ST</div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="image/vk.png" alt="vk"></a>
+                        <a href="#"><img src="image/yt.png" alt="youtube"></a>
+                        <a href="#"><img src="image/tg.png" alt="telegram"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col courses-col">
+                    <h4>ВСЕ КУРСЫ</h4>
+                    <ul>
+                        <li><a href="#">Криптоинвестиции: успешный старт</a></li>
+                        <li><a href="#">Мастерская трейдинга: практика и заработок</a></li>
+                        <li><a href="#">Индивидуальное сопровождение эксперта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col menu-col">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Курсы</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© ООО «Манифест»</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Договор-оферта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon">✓</div>
+            <h2>Заявка принята!</h2>
+            <p>Мы получили ваши данные. Копия успешно сохранена в файл и отправлена на ваш MailHog.</p>
+            <button class="btn-modal-close" onclick="closeModal()">Отлично</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        // Обработка формы через AJAX
+        document.getElementById('ajax-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('.btn-send');
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Отправка...';
+
+            fetch('send.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'Отправить';
+                if(data.status === 'success') {
+                    document.getElementById('success-modal').classList.add('active');
+                    document.getElementById('ajax-form').reset();
+                } else {
+                    alert('Ошибка: ' + data.message);
+                }
+            })
+            .catch(error => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = 'Отправить';
+                console.error('Error:', error);
+                alert('Произошла непредвиденная ошибка при отправке.');
+            });
+        });
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
